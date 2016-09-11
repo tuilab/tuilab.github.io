@@ -1,0 +1,29 @@
+{
+  "name": "tuilab.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "^4.2.6"
+  },
+  "description": "",
+  "main": "README.md",
+  "author": "Thibaud Colas <thibaudcolas@gmail.com> (https://github.com/ThibWeb)",
+  "license": "MIT",
+  "homepage": "https://tuilab.github.io/",
+  "bugs": {
+    "url": "https://github.com/tuilab/tuilab.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuilab/tuilab.github.io.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "hyperlink": "^2.3.0"
+  },
+  "scripts": {
+    "start": "browser-sync start --server . --files index.html",
+    "test": "npm run test:site -s",
+    "test:site": "hyperlink index.html"
+  }
+}
