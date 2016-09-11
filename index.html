@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en_US">
+<head>
+    <meta charset="utf-8">
+    <title>Tui Lab – Bioinformatics resources, scripts and ideas.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Tui Lab – Bioinformatics resources, scripts and ideas.">
+
+    <style>
+        /* https://github.com/necolas/normalize.css v4.2.0 */
+        progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0} [hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+        *, *:before, *:after {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        html {
+            background-color: #fff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .site {
+            margin: 0 auto;
+            padding: 1rem;
+            max-width: 600px;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h1 img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media(min-width: 480px) {
+            h1 {
+                text-align: left;
+                font-size: 3em;
+                line-height: 1.2;
+            }
+
+            h1 img {
+                float: left;
+                margin-right: 1rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a svg,
+        a img {
+            vertical-align: middle;
+        }
+
+        .link {
+            box-shadow: 0 1px 0 currentcolor;
+        }
+
+        .link--highlight {
+            font-weight: 500;
+            color: #ed037c;
+        }
+    </style>
+</head>
+<body class="site">
+    <header>
+        <a href="https://tuilab.github.io/">
+            <h1>
+                <img aria-role="presentation" src="media/tuilab-logo-512x512.jpg" height="128" width="128" alt="Tui Lab Logo – A Tui bird drawing from a very old book" />
+                Tui Lab
+            </h1>
+        </a>
+        <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ut!</strong></p>
+    </header>
+    <a href="https://github.com/tuilab/" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quisquam recusandae ducimus odit eligendi, maiores. Saepe, nam. Explicabo ipsum necessitatibus modi nobis eius repellendus, amet dolore odio, voluptate, ex nulla.</p>
+    </div>
+    <footer>
+        <a href="http://www.oulu.fi/university/">
+            <p style="text-align: right;">Created at <svg style="margin-left: 1em; width: 154px; height: 51px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1712.613 492.403" enable-background="new 0 0 1712.613 492.403" xml:space="preserve"><title>University of Oulu</title><path fill="#23418D" d="M296.562,275.919l-39.485,39.475v137.535l39.485,39.475h86.588l39.475-39.475V315.394l-39.475-39.475H296.562z M371.687,437.01l-9.545,9.545h-44.895l-9.234-9.545V331.312l9.555-9.545h44.573l9.545,9.545V437.01z"/><polygon fill="#23418D" points="450.545,492.403 501.493,492.403 501.493,411.858 577.893,411.858 577.893,366.02 501.493,366.02 501.493,321.767 603.366,321.767 603.366,275.919 450.545,275.919 "/><path fill="#23418D" d="M731.988,275.919l-39.475,39.475v137.535l39.475,39.475h86.588l39.485-39.475V315.394l-39.485-39.475H731.988z M807.114,437.01l-9.545,9.545h-44.885l-9.234-9.545V331.312l9.545-9.545h44.573l9.545,9.545V437.01z"/><polygon fill="#23418D" points="1131.984,275.919 1081.047,275.919 1081.047,492.403 1221.121,492.403 1221.121,446.555 1131.984,446.555 "/><polygon fill="#23418D" points="998.984,435.422 989.44,444.967 944.878,444.967 935.334,435.422 935.334,275.919 884.386,275.919 884.386,452.928 923.872,492.403 1010.446,492.403 1049.932,452.928 1049.932,275.919 998.984,275.919 "/><polygon fill="#23418D" points="1354.126,435.422 1344.581,444.967 1300.02,444.967 1290.475,435.422 1290.475,275.919 1239.528,275.919 1239.528,452.928 1279.014,492.403 1365.587,492.403 1405.073,452.928 1405.073,275.919 1354.126,275.919 "/><polygon fill="#23418D" points="325.913,216.484 381.306,216.484 381.306,0 330.37,0 333.551,136.581 252.052,0 196.659,0 196.659,216.484 247.596,216.484 244.414,79.913 "/><rect x="412.42" fill="#23418D" width="50.937" height="216.484"/><polygon fill="#23418D" points="578.829,170.636 577.565,170.636 530.12,0 478.552,0 539.033,216.484 617.361,216.484 677.843,0 626.274,0 "/><polygon fill="#23418D" points="852.222,45.848 852.222,0 693.037,0 693.037,216.484 852.222,216.484 852.222,170.636 743.974,170.636 743.974,129.575 826.748,129.575 826.748,83.727 743.974,83.727 743.974,45.848 "/><path fill="#23418D" d="M1045.69,102.827V39.475L1006.205,0H880.143v216.484h50.937v-74.172h28.966l37.568,74.172h54.44l-40.428-79.592L1045.69,102.827z M994.743,86.909l-9.223,9.555h-54.44V45.848h54.118l9.545,9.545V86.909z"/><polygon fill="#23418D" points="1121.056,75.768 1121.056,55.393 1130.601,45.848 1224.837,45.848 1224.837,0 1109.594,0 1070.109,39.475 1070.109,90.101 1092.722,117.16 1178.356,140.716 1178.356,161.091 1168.811,170.636 1065.652,170.636 1065.652,216.484 1189.818,216.484 1229.293,177.009 1229.293,126.394 1206.69,99.334 "/><rect x="1252.447" fill="#23418D" width="50.937" height="216.484"/><polygon fill="#23418D" points="1324.953,45.848 1385.434,45.848 1385.434,216.484 1436.371,216.484 1436.371,45.848 1496.863,45.848 1496.863,0 1324.953,0 "/><polygon fill="#23418D" points="1654.992,0 1606.594,100.288 1605.33,100.288 1556.932,0 1499.311,0 1578.903,149.95 1578.903,216.484 1633.021,216.484 1633.021,149.95 1712.613,0 "/><polygon fill="#23418D" points="114.598,159.503 105.054,169.048 60.492,169.048 50.948,159.503 50.948,0 0,0 0,177.009 39.486,216.484 126.059,216.484 165.546,177.009 165.546,0 114.598,0 "/></svg></p>
+        </a>
+    </footer>
+
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-83994557-1','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
