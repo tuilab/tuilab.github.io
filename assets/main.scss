@@ -1,0 +1,83 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Our variables
+$base-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-size:   20px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #333;
+$background-color: #fdfdfd;
+$brand-color:      #002EA2;
+
+$grey-color:       #666;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    600px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+@import "minima";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    max-width: $content-width;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media(min-width: 480px) {
+    h1 {
+        text-align: left;
+        font-size: 3em;
+        line-height: 1.2;
+    }
+
+    h1 img {
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .footer-origin {
+        float: right;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a svg,
+a img {
+    vertical-align: middle;
+}
