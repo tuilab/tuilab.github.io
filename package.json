@@ -5,7 +5,7 @@
   "engines": {
     "node": "^4.2.6"
   },
-  "description": "",
+  "description": "Bioinformatics resources, scripts and ideas.",
   "main": "README.md",
   "author": "Thibaud Colas <thibaudcolas@gmail.com> (https://github.com/thibaudcolas)",
   "license": "MIT",
@@ -17,13 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/tuilab/tuilab.github.io.git"
   },
-  "devDependencies": {
-    "browser-sync": "^2.14.0",
-    "hyperlink": "^2.3.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "browser-sync start --server . --files index.html",
-    "test": "npm run test:site -s",
-    "test:site": "hyperlink index.html"
+    "start": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build",
+    "lint": "bundle exec jekyll doctor",
+    "test": "bundle exec htmlproofer ./_site",
+    "test:ci": "./bin/ci-test.sh"
   }
 }
